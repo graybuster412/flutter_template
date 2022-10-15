@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:online_groceries/shared/shared.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
@@ -30,9 +29,8 @@ class CommonWidget {
         style:
             TextStyle(color: color, fontFamily: 'Rubik', fontSize: titleSize),
       ),
-      backgroundColor: backgroundColor ?? AppColors.deep_orange,
+      backgroundColor: backgroundColor,
       elevation: 0.0,
-      brightness: Brightness.light,
     );
   }
 

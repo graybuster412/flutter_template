@@ -1,8 +1,6 @@
-import 'package:online_groceries/shared/constants/colors.dart';
 import 'package:get/get.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
-import 'package:online_groceries/shared/shared.dart';
 
 class InputPasswordField extends StatefulWidget {
   final TextEditingController controller;
@@ -60,7 +58,7 @@ class _InputPasswordFieldState extends State<InputPasswordField> {
           hintStyle: widget.placeholderStyle,
           labelText: widget.labelText,
           labelStyle: TextStyle(
-            fontSize: CommonConstants.text16,
+            fontSize: 14,
             color: widget.labelColor,
             fontWeight: widget.labelFontWeight,
           ),

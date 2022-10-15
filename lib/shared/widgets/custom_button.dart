@@ -56,7 +56,7 @@ class CustomButton extends StatelessWidget {
           StyleText(
             text: buttonText,
             textColor: textColor,
-            fontSize: 18.sp,
+            fontSize: 18,
             fontWeight: textFontWeight ?? FontWeight.normal,
           ),
         ],
@@ -67,18 +67,14 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Opacity(
       opacity: isDisabled ? 0.5 : 1,
-      child: SizedBox(
-        width: 1.sw,
-        height: buttonHeight,
-        child: ElevatedButton(
-          onPressed: onPressed,
-          child: _buildContent(),
-          style: ElevatedButton.styleFrom(
-            backgroundColor: buttonColor,
-            elevation: 3,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(radius))),
-          ),
+      child: ElevatedButton(
+        onPressed: onPressed,
+        child: _buildContent(),
+        style: ElevatedButton.styleFrom(
+          backgroundColor: buttonColor,
+          elevation: 3,
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(radius))),
         ),
       ),
     );

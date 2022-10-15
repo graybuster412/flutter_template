@@ -1,13 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:online_groceries/theme/fonts.dart';
 
 class StyleText extends StatelessWidget {
   final String _text;
   final Color _textColor;
   final double _fontSize;
   final FontWeight _fontWeight;
-  final String _fontFamily;
+  final String? _fontFamily;
   final TextAlign _textAlign;
   final TextOverflow overflow;
   final int lines;
@@ -19,7 +18,7 @@ class StyleText extends StatelessWidget {
       TextAlign textAlign = TextAlign.left,
       TextOverflow overflow = TextOverflow.ellipsis,
       int lines = 2,
-      String fontFamily = AppFonts.primary,
+      String? fontFamily,
       FontWeight fontWeight = FontWeight.normal})
       : this._text = text,
         this._textColor = textColor,
