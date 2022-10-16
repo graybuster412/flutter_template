@@ -1,8 +1,5 @@
 import 'package:get/get.dart';
 
-import '../ui/auth/auth_binding.dart';
-import '../ui/bottom_nav_controller.dart';
-import '../ui/bottom_nav_pages/profile.dart';
 import '../ui/onboarding/onboarding_screen.dart';
 import '../ui/splash/splash_binding.dart';
 import '../ui/splash/splash_screen.dart';

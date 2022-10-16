@@ -2,6 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'app_binding.dart';
 import 'di.dart';
 import 'lang/translation_service.dart';
 import 'routes/app_pages.dart';
@@ -26,7 +27,8 @@ class MyApp extends StatelessWidget {
       defaultTransition: Transition.fade,
       smartManagement: SmartManagement.keepFactory,
       getPages: AppPages.routes,
-      title: 'Gray Online Groceries',
+      initialBinding: AppBinding(),
+      title: 'Flutter Template',
       locale: TranslationService.locale,
       fallbackLocale: TranslationService.fallbackLocale,
       translations: TranslationService(),

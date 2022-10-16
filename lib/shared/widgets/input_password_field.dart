@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter/material.dart';
 
 class InputPasswordField extends StatefulWidget {
@@ -68,7 +67,7 @@ class _InputPasswordFieldState extends State<InputPasswordField> {
               },
               icon: Icon(
                 _obscureText.value ? Icons.visibility : Icons.visibility_off,
-                size: 20.w,
+                size: 20,
               )),
         ),
       ),
